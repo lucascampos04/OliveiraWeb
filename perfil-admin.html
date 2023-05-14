@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="user.css">
+    <link rel="icon" href="img/rede-mundial-de-computadores.ico" type="image/x-icon">
+    <title>PERFIL DE ADMINISTRADOR</title>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Perfil de Administrador <img src="img/user.png" width="25px" height="25px" alt=""></h1>
+        <div class="search">
+            <input type="text" placeholder="Procurar Usuario" id="search-user">
+            <button id="btn">
+                <img src="img/loupe.png" width="33px" height="38px" alt="">
+            </button>
+            <div class="users">
+                <p>0 Pessoas conectadas</p>
+            </div>
+        </div>
+        <div id="mensagem" class="mensagem"></div>
+    </div>
+
+    <script>
+        document.getElementById('btn').addEventListener('click', function() {
+            var searchTerm = document.getElementById('search-user').value
+            pesquisarUsuarios(searchTerm)
+        })
+
+        function pesquisarUsuarios(searchTerm){
+            var listaUsuariosOnline = []
+
+            if(listaUsuariosOnline.length === 0){
+                var mensagemElemento = document.getElementById('mensagem')
+                mensagemElemento.textContent = 'Não há usuarios online no momento'
+            } else{
+
+            }
+        }
+        
+        // Procurando usuario com o botão  'ENTER'
+
+        var searchInput = document.getElementById('search-user')
+
+        searchInput.addEventListener('keydown', function(event){
+            if (event.key === 'Enter'){
+                var searchTerm = searchInput.value
+                pesquisarUsuarios(searchTerm)
+            }
+        })
+
+    </script>
+</body>
+</html>

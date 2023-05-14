@@ -1,0 +1,87 @@
+body {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Roboto', sans-serif;
+    background-image: url(img/Wordpress\ Admin\ Secret\ Login\ Page\ without\ Plugin.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.conteiner {
+    display: grid;
+    background: linear-gradient(45deg, green, rgb(8, 199, 88));
+    position: absolute;
+    left: 7%;
+    top: 40px;
+    width: 720px;
+    height: 480px;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #67dfb1, #67cad1);
+    border-image-slice: 1;    
+}
+
+.users {
+    position: absolute;
+    left: 4%;
+    top: 130px;
+    background: linear-gradient(to right, #00ff00, #69e29b);
+    height: 330px;
+    width: 570px;
+}
+
+h1 {
+    text-align: center;
+    padding-left: 5px;
+    font-size: 25px;
+    font-weight: bold;
+    background: linear-gradient(to right, #d3d4d4, #e9f0ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+
+input {
+    position: absolute;
+    top: 73px;
+    left: 4%;
+    font-size: 15px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    height: 45px;
+    width: 430px;
+    border-image: linear-gradient(to right, #ff0000, #00ff00);
+    border-image-slice: 1;
+}
+
+button {
+    position: absolute;
+    top: 73px;
+    left: 68%;
+    font-size: 15px;
+    height: 53px;
+    width: 90px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 3px solid;
+    border-image: linear-gradient(to right, #ff0000, #00ff00);
+    border-image-slice: 1; 
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+.mensagem {
+    color: rgb(240, 229, 229);
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+    position: inherit;
+    bottom: 0%;
+    left: 53px;
+    margin: auto;
+}

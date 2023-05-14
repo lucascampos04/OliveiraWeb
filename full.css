@@ -1,0 +1,86 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+}
+
+h1{
+    text-align: left;
+    margin-left: 25px;
+    font-size: 40px;
+    color: rgb(106, 214, 155);
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+h1:hover{
+    color: white;
+    transition: 3s;
+}
+
+.conteiner{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    width: 44%;
+    height: 65%;
+    border-radius: 10px;
+    background: linear-gradient(blue, violet);
+    border: 1px solid #0777c2;
+    padding: 10px;
+    box-shadow:  9px 9px 4px #05578e,
+    -2px -2px 4px #0997f6;
+}
+
+.recuperar-senha{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+input{
+    position: relative;
+    left: 17%;
+    width: 350px;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 15px;
+    border: 1px solid violet;
+}
+
+#ree{
+    position: absolute;
+    left: 70px;
+    width: 150px;
+    height: 32px;
+    font-size: 13px;
+    border: 1px solid rgb(162, 32, 214);
+    border-radius: 5px;
+    cursor: pointer;
+    color: rgb(221, 220, 226);
+    background: linear-gradient(violet, blue);
+    text-transform: uppercase;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#ree:hover{
+    background: linear-gradient(blue, violet);
+    transform: rotate(360deg);
+    transition: 5s;
+}
+
+#next{
+    position: absolute;
+    left: 300px;
+    background: linear-gradient(rgb(79, 62, 141), rgb(8, 64, 128));
+    width: 120px;
+    height: 32px;
+    border-radius: 7px;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+#next-next{
+    color:  white;
+}
