@@ -3,12 +3,17 @@ function login() {
     const senha = document.getElementById('senha').value
   
     if (user == 'admin' && senha == '123') {
-      alert("Login efetuado com sucesso")
-      window.location.href = '/OliveiraWeb/perfil-admin.html'
+      window.location.href = './perfil-admin.html'
       console.log("Login efetuado com sucesso \n Seja bem vindo" + user)
-    } else {
-      alert("Login ou senha incorretos")
+    }else if (user == 'lucas' && senha =='456'){
+      alert("Login efetuado com sucesso")
+      location.href = './telauser.html'
+      console.log('Login efetuado com sucesso \n Seja bem vindo' + user)
+    }
+    else {
       console.log("Login ou senha incorretos")
+      var senhaErrada = document.getElementById('senhaErrada')
+      senhaErrada.style.display = 'block';
     }
   }
   

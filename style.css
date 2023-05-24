@@ -135,5 +135,15 @@ input:focus{
     font-family: 'Montserrat', sans-serif
 }
 
+.mensagem-erro{
+    position: relative;
+    top: -110px;
+    left: 220px;
+    font-size: 13px;
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
 
 
