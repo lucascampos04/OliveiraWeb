@@ -1,66 +1,25 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="full-user.css">
-    <title>Seja Bem Vindo</title>
-    <link rel="icon" href="img/rede-mundial-de-computadores.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="full-user.css">
+  <title>Document</title>
 </head>
 <body>
-    <!-- TELA DE SKINS PROMOCIONAIS -->
-    <!-- ----------------------------->
-    <!-- <div class="alertInicial">
-        <img src="img/cancelar.png" width="20px" height="20px" alt="Botão de sair" class="exit">
-        <h1>80% DE DESCONTO NA PRIMEIRA RECARGA</h1>
-        <div class="carousel-container">
-          <div class="carousel">
-            
-          </div>
-        </div>
-      </div>
-      
-      
-      <div class="modal">
-        <div class="modal-content">
-          <img src="img/cancelar.png" alt="Botão de sair" id="imagem-modal">
-          <h1>80% DE DESCONTO NA PRIMEIRA RECARGA</h1>
-        </div>
-      </div> -->
-
-    <div class="pai">
-      <div class="menu-bar">
-        <img src="img/angle-small-right.png" width="30px" height="30px" alt="">
-
-        <div class="menu">
-          <ul>
-            <li><a href="#"><img src="img/money-bag.gif" width="50px" height="50px" alt="Home"></a></li>
-            <li><a href="#"><img src="img/informacoes.png" width="40px" height="40px" alt="Sobre"></a></li>
-            <li><a href="#"><img src="img/suporte-tecnico.png" width="40px" height="40px" alt="Configurações"></a></li>
-            <li class="contact" alt="Contatos">?</a></li>
-          </ul>
-      </div>
-
-      <div class="xp">
-      </div>
-      <div class="money">
-        <p> <img src="img/income.png" width="30px" height="30px" alt=""> 100.000 </p>
-      </div>
-
-      <div class="perfil-top">
-        
-        <img src="img/man.png" width="40px" height="40px" alt="Perfil" class="perfil-usuario">
-      </div>
-    </div>      
-      
-      
-      
-    
-    <!-- SCRIPT DE PROMOÇÃO DE SKINS -->
-    <script src="/scripts/promo-skin.js"></script>
-
-    <!-- SCRIPT DE USUARIOS -->
-    <script src="/scripts/user.js"></script>
+  <div id="container">
+    <div id="header">
+        <div id="coins">Moedas: 0</div>
+    </div>
+    <div id="xp-bar">
+        <div id="xp-progress"></div>
+    </div>
+    <div id="level">Nível: 1</div>
+    <div class="start-game">
+      <button id="btn-start-game">Start</button>
+    </div>
+</div>
+<script src="scripts/lobby.js"></script>
 </body>
 </html>
