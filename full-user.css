@@ -6,9 +6,9 @@ body {
 }
 
 #container {
+  position: relative;
+  left: 20%;
   max-width: 800px;
-  margin: 0 auto;
-  padding: 10px;
 }
 
 #header {
