@@ -11,7 +11,7 @@ function toggleMusic() {
     isPlaying = false;
   } else {
     lobbySound.play();
-    stopMusic.src = imgOnsound
+    stopMusic.src = imgOnsound;
     isPlaying = true;
   }
 }
