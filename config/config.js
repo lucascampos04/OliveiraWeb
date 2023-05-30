@@ -30,7 +30,7 @@ function openWindowSetting() {
             <label for="volume">Volume</label>
             <input type="range" id="volume" min="0" max="100" value="50">
             
-            <button type="submit">Salvar</button>
+            <button type="submit" id="exitPag">Salvar</button>
         </form>
         
         <div class="loginRedes">
