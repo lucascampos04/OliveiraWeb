@@ -9,12 +9,12 @@
 </head>
 <body>
 
-  <!-- <audio id="sound-lobby" src="efeitos sonoros/At Peace.mp3" autoplay loop></audio>
-  <img id="stop-music-img" src="img/auto-sound.png" width="30px" height="30px" title="Imagem de som para pausar a música de lobby" onclick="toggleMusic()" alt=""> -->
+   <audio id="sound-lobby" src="efeitos sonoros/At Peace.mp3" autoplay loop></audio>
+  <img id="stop-music-img" src="img/auto-sound.png" width="30px" height="30px" title="Imagem de som para pausar a música de lobby" onclick="toggleMusic()" alt="">
 
   <div class="profile-user">
     <div class="config">
-      <img src="img/configuracoes-cog.png" width="20px" height="20px" alt="" id="settings">
+      <img src="img/configuracoes-cog.png" width="20px" height="20px" alt="" id="settings" onclick="openWindowSetting()">
     </div>
     <img src="img/man.png" width="80px" height="80px" alt="">
   </div>
@@ -38,5 +38,6 @@
   <audio id="button-sound" src=""></audio>
 
   <script src="scripts/lobby.js"></script>
+  <script src="config/config.js"></script>
 </body>
 </html>

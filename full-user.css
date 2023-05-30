@@ -8,6 +8,7 @@ body {
 .profile-user {
   position: relative;
   left: 93%;
+  top: -30px;
   cursor: pointer;
 }
 
@@ -20,8 +21,9 @@ body {
 .container {
   position: relative;
   max-width: 800px;
-  margin: auto;
-  padding-top: 65px;
+  left: 20%;
+  top: 34px;
+  
 }
 
 #xp-bar, #level, 
