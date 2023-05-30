@@ -36,5 +36,21 @@
             <a href="#"><img src="./img-testes/smartphone-call.png" alt="Telefone"></a>
         </div>
     </div>
+
+    <script>
+        var form = newWindow.document.querySelector('form');
+
+        form.addEventlistener('submit', function(event){
+            event.preventDefault();
+
+            var mensagem = newWindow.document.createElement('p');
+            mensagem.textContent = 'As configurações foram alteradas com sucesso';
+            newWindow.document.body.appendChild(mensagem);
+
+            setTimeout(function(){
+                newWindow.close();
+            }, 2000);
+        })
+    </script>
 </body>
 </html>
