@@ -96,14 +96,15 @@ input:focus{
 
 #cookie-banner {
     position: fixed;
-    bottom: 25px;
-    left: 20%;
+    bottom: 355px;
+    left: 30%;
     width: 50%;
     background-color: #f0f0f0;
     padding: 10px;
     text-align: center;
-    opacity: 0.8;
-  }
+    opacity: 0.9;
+    
+}
   
   #accept-cookies {
     background-color: #4CAF50;
