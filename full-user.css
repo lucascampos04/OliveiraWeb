@@ -51,6 +51,22 @@ body {
 #xp-progress {
   height: 100%;
   background-color: #4caf50;
+  animation: progress 2s linear infinite;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+  animation: glow 1s infinite;
+}
+
+@keyframes progress {
+  0% {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.9);
+  }
+  100% {
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.6);
+    
+  }
 }
 
 #level {
@@ -78,72 +94,60 @@ body {
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
+  animation: scale 1s infinite;
 }
 
-#btn-start-game::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border: 4px solid #a98260;
-  border-radius: 4px;
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
-#btn-training {
-  position: relative;
-  top: 290px;
-  left: -250px;
-  z-index: -1;
-  height: 70px;
-  width: 250px;
-  font-size: 25px;
-  font-family: 'MinecraftRegular', sans-serif;
-  border: none;
-  background-color: red;
-  color: white;
-  text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-  margin-left: 20px;
-}
-
-#btn-training::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
-  border: 4px solid #2409c2;
-}
-
+#btn-training,
 #btn-campaign {
   position: relative;
   top: 290px;
-  left: -50px;
   z-index: -1;
   height: 70px;
   width: 250px;
   font-size: 25px;
   font-family: 'MinecraftRegular', sans-serif;
   border: none;
-  background-color: #8b5a2b;
   color: white;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
   margin-left: 20px;
+  animation: glow 1s infinite;
 }
 
-#btn-campaign::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  left: -8px;
-  right: -8px;
-  bottom: -8px;
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+#btn-training {
+  left: -250px;
+  background-color: red;
+}
+
+#btn-campaign {
+  left: -50px;
+  background-color: #8b5a2b;
   border: 4px solid #a98260;
   border-radius: 4px;
 }
+
