@@ -1,8 +1,8 @@
 var lobbySound = document.getElementById('sound-lobby');
 var stopMusic = document.getElementById('stop-music-img');
 var isPlaying = true;
-imgOnsound = 'img/auto-sound.png'
-imgOffsound = 'img/sem-som.png'
+imgOnsound = 'img/sound.png'
+imgOffsound = 'img/sound.png'
 
 function toggleMusic() {
   if (isPlaying) {

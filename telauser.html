@@ -9,25 +9,31 @@
 </head>
 <body>
 
-   <audio id="sound-lobby" src="efeitos sonoros/At Peace.mp3" autoplay loop></audio>
-  <img id="stop-music-img" src="img/auto-sound.png" width="30px" height="30px" title="Imagem de som para pausar a música de lobby" onclick="toggleMusic()" alt="">
-
+  <video autoplay loop muted>
+    <source src="videos/SaveTube.App-(Arcade) Asteroids-(480p).mp4" type="video/mp4">
+  </video>
+  <div class="sound">
+    <audio id="sound-lobby" src="efeitos sonoros/At Peace.mp3" autoplay loop></audio>
+    <img id="stop-music-img" src="img/sound.png" width="30px" height="30px" title="Imagem de som para pausar a música de lobby" onclick="toggleMusic()" alt="">
+  </div>
   <div class="profile-user">
     <div class="config">
-      <img src="img/configuracoes-cog.png" width="20px" height="20px" alt="" id="settings" onclick="openWindowSetting()">
+      <img src="img/configuracoes.png" width="20px" height="20px" alt="" id="settings" onclick="openWindowSetting()">
     </div>
     <img src="img/man.png" width="80px" height="80px" alt="">
   </div>
 
 
   <div class="container">
-    <div id="header">
-        <div id="coins">Moedas: 0</div>
-    </div>
-    <div id="xp-bar">
-        <div id="xp-progress"></div>
-    </div>
-    <div id="level">Nível: 1</div>
+  <div class="progress">
+      <div id="header">
+          <div id="coins">Moedas: 0</div>
+      </div>
+      <div id="xp-bar">
+          <div id="xp-progress"></div>
+      </div>
+      <div id="level">Nível: 1</div>
+  </div>
     <div class="start-game">
       <button id="btn-start-game">Start</button>
       <button id="btn-training">Treinamento</button>
