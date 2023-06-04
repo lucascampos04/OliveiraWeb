@@ -13,6 +13,15 @@ function openStartGame(){
     </head>
     <body style="background-color: black;">
 
+    <script>
+        var buttonStart = document.getElementById('btn-start-game');
+
+        buttonStart.addEventListener('click', openStartGame);
+
+        function openStartGame() {
+            var newWindow = window.open('game.html', 'Jogo iniciado', 'width=700, height=500');
+        }
+    </script>
     </body>
     </html>
     `
