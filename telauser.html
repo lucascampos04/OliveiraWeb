@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="full-user.css">
   <title>Perfil</title>
 </head>
-<body>
+<body style="background-color: black;">
 
   <video autoplay loop muted>
     <source src="videos/SaveTube.App-(Arcade) Asteroids-(480p).mp4" type="video/mp4">
@@ -35,14 +35,15 @@
       <div id="level">Nível: 1</div>
   </div>
     <div class="start-game">
-      <button id="btn-start-game">Start</button>
-      <button id="btn-training">Treinamento</button>
-      <button id="btn-campaign">Modo Campanha</button>
+      <button id="btn-start-game" type="submit" onclick="openStartGame()">Start</button>
+      <button id="btn-training" type="submit">Treinamento</button>
+      <button id="btn-campaign" type="submit">Modo Campanha</button>
     </div>
   </div>
 
   <audio id="button-sound" src=""></audio>
 
+  <script src="game/index.js"></script>
   <script src="scripts/lobby.js"></script>
   <script src="config/config.js"></script>
 </body>
