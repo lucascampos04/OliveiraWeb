@@ -2,6 +2,7 @@
 if (!localStorage.getItem('cookiesAccepted')) {
     // Se não aceitou, exibe o banner
     document.getElementById('cookie-banner').style.display = 'block';
+    
   }
   
   // Função para aceitar os cookies
