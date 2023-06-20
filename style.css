@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #111;
+  background: linear-gradient(to left, whitesmoke, black);
   font-family: Arial, sans-serif;
 }
 
@@ -20,23 +20,30 @@ body {
   right: 50px;
   bottom: 30%;
   font-size: 100px;
+  letter-spacing: 2px;
 }
 
 .login-c {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
-  width: 90%;
-  height: 60vh;
+  gap: 30px;
+  width: 50%;
+  height: 70vh;
+  position: relative;
+  left: 53%;
   background-color: #222;
   padding: 20px;
-  border-radius: 5px;
+  border-radius: 30px;
+  box-shadow: 2px 2px 10px rgba(25, 119, 201, 0.5);
+  opacity: 0.8;
 }
 
 .login-c h2{
   display: grid;
   text-align: center;
+  font-size: 30px;
+  letter-spacing: 5px;
 }
  
 .form-container {
@@ -56,11 +63,12 @@ body {
 }
 
 .input-container input {
-  flex: 1;
+  width: 100%;
   padding: 10px;
   border: none;
-  background-color: #222;
+  background-color: #333;
   color: #fff;
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
 
@@ -93,16 +101,20 @@ body {
 
 #toggle-senha {
   background: transparent;
-  position: relative;
-  right: 70px;
+  border: none;
 }
 
-#senha {
-  padding-right: 50%;
+.esqueci-senha{
+  color: rgb(209, 203, 203);
+  text-decoration: none;
+  position: fixed;
+  top: 50vh;
+  right: 56vh;
+  font-size: 14px;
 }
 
-button {
-  padding: 10px 20px;
+#btn {
+  padding: 10px 40px;
   background-color: #007bff;
   border: none;
   color: #fff;
@@ -111,13 +123,18 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+#btn:hover {
   background-color: #0056b3;
 }
 
 .form-imgs-logins {
   display: flex;
-  gap: 20px;
+  justify-content: flex-end;
+  position: fixed;
+  bottom: 85px;
+  right: 30vh;
+  gap: 10px;
+  z-index: 1;
 }
 
 #cookie-banner {
@@ -137,7 +154,7 @@ button:hover {
   font-size: 14px;
 }
 
-#cookie-banner button {
+#cookie-banner #btn {
   margin-left: 10px;
   background-color: #007bff;
   border: none;
@@ -147,7 +164,7 @@ button:hover {
   cursor: pointer;
 }
 
-#cookie-banner button:hover {
+#cookie-banner #btn:hover {
   background-color: #0056b3;
 }
 
@@ -155,54 +172,4 @@ button:hover {
   display: none;
 }
 
-.create-account {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  width: 90%;
-  background-color: #222;
-  padding: 20px;
-  border-radius: 5px;
-  position: relative;
-  top: 10vh;
-  right: 2px;
-}
-
-.create-account h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #fff;
-}
-
-.create-account input {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background-color: #333;
-  color: #fff;
-  border-radius: 3px;
-  transition: all 0.3s ease;
-}
-
-.create-account input:focus {
-  outline: none;
-  border: 1px solid #007bff;
-  background-color: #444;
-}
-
-.create-account button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  border: none;
-  color: #fff;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 3px;
-  transition: background-color 0.3s ease;
-}
-
-.create-account button:hover {
-  background-color: #0056b3;
-}
 

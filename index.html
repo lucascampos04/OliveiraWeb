@@ -14,32 +14,25 @@
         <h1>Oliveira <br>Web</h1>
         <div class="form-container">
             <div class="login-c">
-                <h2>Login</h2>
+                <h2>LOGIN</h2>
                 <div class="input-container">
                     <input type="text" id="usuario" placeholder="Usuário">
                 </div>  
                 <div class="input-container">
                     <input type="password" id="senha" placeholder="Senha">
-                    <button id="toggle-senha" onclick="toggleSenhaVisibility()"><i class="fas fa-eye"><img src="img/visivel.png" width="15px" height="15px" alt=""></i></button>
+                    <button id="toggle-senha" onclick="toggleSenhaVisibility()"><i class="fas fa-eye"><img src="img/visivel.png" width="px" height="15p" alt=""></i></button>
                 </div> 
+                <div class="esqueci-senha">
+                    <a href="esqueci-senha.html" class="esqueci-senha">Esqueci senha</a>
+                </div>
                 <button type="button" value="Enviar" id="btn" onclick="login(); senhaVisibility()">Entrar</button>
                 <p id="senhaErrada" class="mensagem-erro">Senha incorreta! <br> Tente novamente.</p>
-            
-                <div class="esqueci-senha">
-                    <a href="esqueci-senha.html">Esqueci minha senha</a>
-                </div>
             </div>
-            <div class="create-account">
-                <h3>Criar uma nova conta</h3>
-                <div class="input-container">
-                    <input type="text" id="novoUsuario" placeholder="Novo usuário">
-                </div>
-                <div class="input-container">
-                    <input type="password" id="novaSenha" placeholder="Nova senha">
-                </div>
-                <button type="button" value="CriarConta" id="btnCriarConta" onclick="criarConta()">Criar Conta</button>
-            </div>
-
+        </div>
+        <div class="form-imgs-logins">
+            <a href=""><img src="img/facebook.png" alt="" width="45px" height="45px"></a>
+            <a href=""><img src="img/steam.png" alt="" width="50px" height="50px"></a>
+            <a href=""><img src="img/google.png" alt="" width="45px" height="45px"></a>
         </div>
     </div>
     <div id="cookie-banner">
