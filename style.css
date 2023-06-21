@@ -1,9 +1,13 @@
+/* Estilos gerais */
+
 body {
   margin: 0;
   padding: 0;
   background: linear-gradient(to left, whitesmoke, black);
   font-family: Arial, sans-serif;
 }
+
+/* Estilos para telas grandes */
 
 .container {
   display: flex;
@@ -45,7 +49,7 @@ body {
   font-size: 30px;
   letter-spacing: 5px;
 }
- 
+
 .form-container {
   display: flex;
   flex-direction: row;
@@ -172,4 +176,59 @@ body {
   display: none;
 }
 
+/* Estilos para telas de smartphone */
 
+@media screen and (max-width: 480px) {
+  .container {
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .container h1 {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .login-c {
+    width: 100%;
+    height: auto;
+    position: static;
+    margin-top: 20px;
+    border-radius: 0;
+    box-shadow: none;
+    opacity: 1;
+  }
+
+  .login-c h2 {
+    font-size: 20px;
+  }
+
+  .form-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .input-container {
+    width: 100%;
+  }
+
+  .esqueci-senha {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+
+  .form-imgs-logins {
+    position: static;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+
+  #cookie-banner {
+    position: static;
+    transform: none;
+    margin-top: 20px;
+  }
+}
