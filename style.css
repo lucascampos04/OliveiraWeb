@@ -17,6 +17,7 @@ body {
   color: #fff;
   position: relative;
   right: 3vh;
+  
 }
 
 .container h1 {
@@ -25,6 +26,17 @@ body {
   bottom: 30%;
   font-size: 100px;
   letter-spacing: 2px;
+  background: linear-gradient(to right, #ece5e5, #4c4c86);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@keyframes colorAnimation {
+  0% { box-shadow: 0 0 10px rgb(255, 0, 0); }
+  25% { box-shadow: 0 0 10px rgb(0, 255, 0); }
+  50% { box-shadow: 0 0 10px rgb(0, 0, 255); }
+  75% { box-shadow: 0 0 10px rgb(255, 255, 0); }
+  100% { box-shadow: 0 0 10px rgb(255, 0, 0); }
 }
 
 .login-c {
@@ -35,19 +47,19 @@ body {
   width: 50%;
   height: 70vh;
   position: relative;
-  left: 53%;
+  left: 30%;
   background-color: #222;
   padding: 20px;
   border-radius: 30px;
-  box-shadow: 2px 2px 10px rgba(25, 119, 201, 0.5);
+  animation: colorAnimation 5s linear infinite;
   opacity: 0.8;
 }
 
 .login-c h2{
   display: grid;
   text-align: center;
-  font-size: 30px;
-  letter-spacing: 5px;
+  font-size: 50px;
+  letter-spacing: 10px;
 }
 
 .form-container {
@@ -63,12 +75,12 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .input-container input {
-  width: 100%;
-  padding: 10px;
+  width: 80%;
+  padding: 20px;
   border: none;
   background-color: #333;
   color: #fff;
@@ -94,7 +106,7 @@ body {
 
 .input-container:focus-within::before,
 .input-container:focus-within::after {
-  width: 100%;
+  width: 90%;
 }
 
 .input-container input:focus {
@@ -112,8 +124,8 @@ body {
   color: rgb(209, 203, 203);
   text-decoration: none;
   position: fixed;
-  top: 50vh;
-  right: 56vh;
+  top: 64vh;
+  right: 78svh;
   font-size: 14px;
 }
 
@@ -136,7 +148,7 @@ body {
   justify-content: flex-end;
   position: fixed;
   bottom: 85px;
-  right: 30vh;
+  right: 55vh;
   gap: 10px;
   z-index: 1;
 }
@@ -144,7 +156,7 @@ body {
 #cookie-banner {
   position: fixed;
   bottom: 20px;
-  left: 50%;
+  left: 20%;
   transform: translateX(-50%);
   display: flex;
   align-items: center;
@@ -174,61 +186,4 @@ body {
 
 #senhaErrada {
   display: none;
-}
-
-/* Estilos para telas de smartphone */
-
-@media screen and (max-width: 480px) {
-  .container {
-    justify-content: flex-start;
-    padding: 20px;
-  }
-
-  .container h1 {
-    font-size: 40px;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-
-  .login-c {
-    width: 100%;
-    height: auto;
-    position: static;
-    margin-top: 20px;
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 1;
-  }
-
-  .login-c h2 {
-    font-size: 20px;
-  }
-
-  .form-container {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .input-container {
-    width: 100%;
-  }
-
-  .esqueci-senha {
-    position: static;
-    text-align: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-  }
-
-  .form-imgs-logins {
-    position: static;
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-
-  #cookie-banner {
-    position: static;
-    transform: none;
-    margin-top: 20px;
-  }
 }
